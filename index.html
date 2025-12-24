@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universal Tech Institute | World-Class Technical Education</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --gold: #d4af37;
+    --dark: #0b0f1a;
+    --light: #f8f9fc;
+    --accent: #1f3c88;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--light);
+    color: #222;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background:
+        linear-gradient(to right, rgba(11,15,26,0.85), rgba(11,15,26,0.6)),
+        url('https://images.unsplash.com/photo-1518770660439-4636190af475') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero span {
+    color: var(--gold);
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 20px;
+    opacity: 0.95;
+}
+
+.hero button {
+    margin-top: 40px;
+    padding: 15px 40px;
+    background: var(--gold);
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: #c9a227;
+}
+
+/* NAV */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(11,15,26,0.85);
+    backdrop-filter: blur(8px);
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 18px 0;
+}
+
+nav li {
+    margin: 0 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+/* SECTIONS */
+.section {
+    padding: 100px 8%;
+}
+
+.section h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section h2 span {
+    color: var(--gold);
+}
+
+.section p.lead {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    font-size: 18px;
+    opacity: 0.85;
+}
+
+/* GLASS CARDS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.card {
+    background: rgba(255,255,255,0.65);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 40px 80px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: var(--accent);
+}
+
+/* STATS */
+.stats {
+    background: linear-gradient(135deg, var(--accent), #102a6d);
+    color: white;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 50px;
+    color: var(--gold);
+}
+
+.stat p {
+    letter-spacing: 1px;
+}
+
+/* CONTACT */
+.contact {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+}
+
+.contact button {
+    margin-top: 30px;
+    padding: 16px 45px;
+    background: transparent;
+    color: var(--gold);
+    border: 2px solid var(--gold);
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: var(--gold);
+    color: black;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#stats">Why Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<div>
+    <h1>Universal <span>Tech</span> Institute</h1>
+    <p>World-Class Mobile Repairing & Technology Education</p>
+    <button>Explore Programs</button>
+</div>
+</section>
+
+<section class="section" id="about">
+<h2>About <span>Us</span></h2>
+<p class="lead">
+We are a premium technical education institute delivering international-standard
+training in Mobile Repairing, Hardware & Software technologies — focused on
+practical mastery, business growth, and long-term success.
+</p>
+</section>
+
+<section class="section" id="courses">
+<h2>Our <span>Elite Programs</span></h2>
+<div class="grid">
+    <div class="card">
+        <h3>Foundation Program</h3>
+        <p>Beginner-to-professional pathway covering tools, diagnostics, and real-world repairs.</p>
+    </div>
+    <div class="card">
+        <h3>Advanced IC-Level Engineering</h3>
+        <p>Motherboard-level fault analysis, power circuits, signal & charging architecture.</p>
+    </div>
+    <div class="card">
+        <h3>Professional Software Mastery</h3>
+        <p>Flashing, FRP, dead boot recovery, IMEI solutions & advanced diagnostics.</p>
+    </div>
+</div>
+</section>
+
+<section class="section stats" id="stats">
+<div class="stats-grid">
+    <div class="stat">
+        <h3>100%</h3>
+        <p>Practical Learning</p>
+    </div>
+    <div class="stat">
+        <h3>Expert</h3>
+        <p>Industry Mentors</p>
+    </div>
+    <div class="stat">
+        <h3>Career</h3>
+        <p>Business Support</p>
+    </div>
+    <div class="stat">
+        <h3>Global</h3>
+        <p>Skill Standards</p>
+    </div>
+</div>
+</section>
+
+<section class="section contact" id="contact">
+<h2>Start Your <span>Professional Journey</span></h2>
+<p>Mumbai, Maharashtra · +91 XXXXXXXXXX · universaltech@gmail.com</p>
+<button>Book Consultation</button>
+</section>
+
+<footer>
+© 2025 Universal Tech Institute | Crafted for Excellence
+</footer>
+
+</body>
+</html>
